@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name: stu_web
+  registry:
+    address: zookeeper://192.168.106.188:2181
+    #自动分配端口
+  protocol:
+    port: -1
+    #设置消费者启动时不分先后顺序
+  consumer:
+    check: false
+server:
+  port: 9090
