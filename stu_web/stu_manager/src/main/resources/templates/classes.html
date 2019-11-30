@@ -8,17 +8,15 @@
 <table >
     <tr>
         <td>编号</td>
-        <td>姓名</td>
-        <td>密码</td>
         <td>班级</td>
+        <td>班级总人数</td>
         <td>操作</td>
     </tr>
-    <tr th:each="n : ${student}" >
+    <tr th:each="n : ${classes}" >
         <td th:text="${n.id}">编号</td>
-        <td th:text="${n.sname}">姓名</td>
-        <td th:text="${n.age}">密码</td>
-        <td th:text="${n.cls.cname}">学号</td>
-        <td><a th:href="|/stu/deleteById?id=${n.id}|"> 删除</a>|<a th:href="|/stu/getStuById?id=${n.id}|">修改</a></td>
+        <td th:text="${n.cname}">姓名</td>
+        <td th:text="${n.cnum}">密码</td>
+        <td><a th:href="|/cls/deleteById?id=${n.id}|"> 删除</a>|<a th:href="|/cls/getClsById?id=${n.id}|">修改</a></td>
     </tr>
 </table>
 <a href="/stu/backIndex"> 返回首页</a>

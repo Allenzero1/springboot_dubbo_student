@@ -8,10 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = "com.qf")
 @MapperScan("com.qf.dao")
 @DubboComponentScan("com.qf.serviceimpl")
-public class StuClassesApplication {
+public class StuClassesApplication1 {
 
-    public static void main(String[] args) {
-        SpringApplication.run(StuClassesApplication.class, args);
+    public static void main(String[] args)
+    {
+        SpringApplication.run(StuClassesApplication1.class, args);
     }
 
 }

@@ -1,5 +1,6 @@
 package com.qf.service;
 
+import com.qf.entity.Class;
 import com.qf.entity.Student;
 
 import java.util.List;
@@ -9,13 +10,13 @@ import java.util.List;
  * @version 1.0
  * @Date 2019/11/30
  */
-public interface IStuService {
-
-    List<Student> searchAll();
+public interface IClassService {
+    List<Class> searchAll();
 
     void deleteById(int id);
 
-    Student getStuById(int id);
+    Class getClsById(int cid);
 
-    void updateById(Student student);
+    void updateById(Class classes);
+
 }

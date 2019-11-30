@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form  action="/stu/updateById" method="post">
+        <table>
+            <tr>
+                <td>编号:</td>
+
+                <td ><input type="text" name="id" th:value="${stu.id}"/> </td>
+            </tr>
+            <tr>
+                <td>姓名</td>
+                <td><input type="text" name="sname" th:value="${stu.sname}"/></td>
+            </tr>
+            <tr>
+                <td>年龄</td>
+                <td><input type="text" name="age" th:value="${stu.age}"/></td>
+            </tr>
+            <tr>
+                <td>班级</td>
+                <td ><input type="text" name="id" th:value="${stu.cls.cname}"/></td>
+            </tr>
+        </table>
+        <input type="submit" value="修改"/> |<input type="reset" value="重置"/>
+    </form>
+</body>
+</html>
